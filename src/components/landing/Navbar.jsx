@@ -21,8 +21,8 @@ export default function Navbar() {
           {/* Logo */}
           <Link to={createPageUrl('Home')} className="flex items-center gap-2.5">
             <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center relative">
-              <Compass className="h-5 w-5 text-white" />
-              <GraduationCap className="h-3 w-3 text-white absolute -top-0.5 -right-0.5" />
+              <Compass className="h-5 w-5 text-white mt-1" />
+              <GraduationCap className="h-4 w-4 text-white absolute top-1" />
             </div>
             <span className="text-xl font-semibold tracking-tight text-slate-900">NextGrad</span>
           </Link>
