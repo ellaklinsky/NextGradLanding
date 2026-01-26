@@ -4,7 +4,7 @@ import { Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "AdvisorAI has transformed how our advising center operates. We've increased our student success rate while reducing advisor burnout significantly.",
+    quote: "NextGrad has transformed how our advising center operates. We've increased our student success rate while reducing advisor burnout significantly.",
     author: "Dr. Sarah Chen",
     role: "Director of Academic Advising",
     institution: "University of Michigan",

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Play, Sparkles, GraduationCap, Users, TrendingUp } from 'lucide-react';
+import { ArrowRight, Play, Compass, GraduationCap, Users, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 
@@ -21,7 +21,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-8"
           >
-            <Sparkles className="h-4 w-4 text-blue-600" />
+            <Compass className="h-4 w-4 text-blue-600" />
             <span className="text-sm font-medium text-blue-700">AI-Powered Graduate School Advisory</span>
           </motion.div>
 

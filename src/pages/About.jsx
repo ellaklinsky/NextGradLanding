@@ -70,7 +70,7 @@ const milestones = [
   { year: '2020', event: 'Launched beta with 10 partner institutions' },
   { year: '2021', event: 'Series A funding, expanded to 50 universities' },
   { year: '2022', event: 'Reached 100,000 students guided' },
-  { year: '2023', event: '200+ institutions, introduced AI matching engine' },
+  { year: '2023', event: '200+ institutions, launched NextGrad AI matching engine' },
   { year: '2024', event: 'Global expansion with 50,000+ successful placements' }
 ];
 
@@ -94,7 +94,7 @@ export default function About() {
               </h1>
               <p className="mt-8 text-xl text-slate-600 leading-relaxed">
                 We believe that behind every successful graduate student is a dedicated advisor. 
-                AdvisorAI exists to amplify the impact of these unsung heroes in higher education.
+                NextGrad exists to amplify the impact of these unsung heroes in higher education.
               </p>
             </motion.div>
           </div>
@@ -147,7 +147,7 @@ export default function About() {
                   to apply machine learning in a meaningful way.
                 </p>
                 <p>
-                  Together, they built AdvisorAI—not to replace the human connection at the heart 
+                  Together, they built NextGrad—not to replace the human connection at the heart 
                   of advising, but to give advisors the insights and tools they need to guide more 
                   students toward their dreams.
                 </p>

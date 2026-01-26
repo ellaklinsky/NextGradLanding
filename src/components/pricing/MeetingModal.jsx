@@ -47,8 +47,8 @@ export default function MeetingModal({ open, onOpenChange, selectedPlan }) {
                 </DialogTitle>
                 <DialogDescription className="text-slate-600">
                   {selectedPlan 
-                    ? `Interested in the ${selectedPlan.name} plan? Let's discuss how AdvisorAI can help your institution.`
-                    : "Connect with our team to learn how AdvisorAI can transform your advising program."
+                    ? `Interested in the ${selectedPlan.name} plan? Let's discuss how NextGrad can help your institution.`
+                    : "Connect with our team to learn how NextGrad can transform your advising program."
                   }
                 </DialogDescription>
               </DialogHeader>

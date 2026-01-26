@@ -44,7 +44,7 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="mt-6 text-xl text-slate-600 max-w-2xl mx-auto">
-              Have questions about AdvisorAI? Our team is here to help you find the perfect solution for your institution.
+              Have questions about NextGrad? Our team is here to help you find the perfect solution for your institution.
             </p>
           </motion.div>
         </div>

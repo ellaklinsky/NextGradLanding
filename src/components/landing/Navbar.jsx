@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X, Compass, GraduationCap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function Navbar() {
@@ -20,10 +20,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to={createPageUrl('Home')} className="flex items-center gap-2.5">
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-slate-900 to-slate-700 flex items-center justify-center">
-              <Sparkles className="h-5 w-5 text-white" />
+            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center relative">
+              <Compass className="h-5 w-5 text-white" />
+              <GraduationCap className="h-3 w-3 text-white absolute -top-0.5 -right-0.5" />
             </div>
-            <span className="text-xl font-semibold tracking-tight text-slate-900">AdvisorAI</span>
+            <span className="text-xl font-semibold tracking-tight text-slate-900">NextGrad</span>
           </Link>
 
           {/* Desktop Navigation */}

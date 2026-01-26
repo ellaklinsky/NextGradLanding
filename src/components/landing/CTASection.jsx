@@ -31,7 +31,7 @@ export default function CTASection() {
             <span className="block text-blue-400">advising program?</span>
           </h2>
           <p className="mt-6 text-xl text-slate-400 max-w-2xl mx-auto">
-            Join hundreds of institutions already using AdvisorAI to guide their students 
+            Join hundreds of institutions already using NextGrad to guide their students 
             toward graduate school success.
           </p>
 

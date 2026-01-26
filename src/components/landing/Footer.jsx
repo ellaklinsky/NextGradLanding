@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
-import { Sparkles, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Compass, GraduationCap, Linkedin, Twitter, Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -11,10 +11,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <Link to={createPageUrl('Home')} className="flex items-center gap-2.5 mb-6">
-              <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
-                <Sparkles className="h-5 w-5 text-white" />
+              <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center relative">
+                <Compass className="h-5 w-5 text-white" />
+                <GraduationCap className="h-3 w-3 text-white absolute -top-0.5 -right-0.5" />
               </div>
-              <span className="text-xl font-semibold tracking-tight">AdvisorAI</span>
+              <span className="text-xl font-semibold tracking-tight">NextGrad</span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed">
               Empowering academic advisors with AI-driven insights to guide students toward their graduate school dreams.
@@ -57,7 +58,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-sm">
-            © {new Date().getFullYear()} AdvisorAI. All rights reserved.
+            © {new Date().getFullYear()} NextGrad. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a href="#" className="text-slate-500 hover:text-white transition-colors">
