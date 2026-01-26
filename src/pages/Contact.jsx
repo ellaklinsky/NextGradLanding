@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { base44 } from '@/api/base44Client';
 import { 
   Mail, 
   Phone, 
@@ -12,11 +13,13 @@ import {
   MessageSquare,
   Clock,
   CheckCircle2,
-  Send
+  Send,
+  Loader2
 } from 'lucide-react';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -25,8 +28,35 @@ export default function Contact() {
     message: ''
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    
+    const subjectLabels = {
+      demo: 'Request a Demo',
+      pricing: 'Pricing Inquiry',
+      support: 'Technical Support',
+      partnership: 'Partnership Opportunity',
+      other: 'Other'
+    };
+
+    await base44.integrations.Core.SendEmail({
+      to: formData.email,
+      subject: `NextGrad Contact Form: ${subjectLabels[formData.subject] || 'General Inquiry'}`,
+      body: `
+New contact form submission from NextGrad website:
+
+Name: ${formData.name}
+Email: ${formData.email}
+Institution: ${formData.institution || 'Not provided'}
+Subject: ${subjectLabels[formData.subject] || 'Not specified'}
+
+Message:
+${formData.message}
+      `.trim()
+    });
+
+    setLoading(false);
     setSubmitted(true);
   };
 
@@ -70,8 +100,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
-                    <p className="text-slate-600">hello@advisorai.edu</p>
-                    <p className="text-slate-600">support@advisorai.edu</p>
+                    <p className="text-slate-600">hello@nextgrad.edu</p>
+                    <p className="text-slate-600">support@nextgrad.edu</p>
                   </div>
                 </div>
 
@@ -214,10 +244,20 @@ export default function Contact() {
 
                       <Button 
                         type="submit" 
+                        disabled={loading}
                         className="w-full bg-slate-900 hover:bg-slate-800 rounded-full h-14 text-base"
                       >
-                        Send Message
-                        <Send className="ml-2 h-5 w-5" />
+                        {loading ? (
+                          <>
+                            <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                            Sending...
+                          </>
+                        ) : (
+                          <>
+                            Send Message
+                            <Send className="ml-2 h-5 w-5" />
+                          </>
+                        )}
                       </Button>
                     </form>
                   </>
