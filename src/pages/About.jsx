@@ -1,0 +1,313 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+import { 
+  Target, 
+  Heart, 
+  Lightbulb, 
+  Users, 
+  Award, 
+  ArrowRight,
+  GraduationCap,
+  Globe,
+  TrendingUp
+} from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { createPageUrl } from '@/utils';
+
+const values = [
+  {
+    icon: Target,
+    title: 'Mission-Driven',
+    description: 'Every feature we build is designed to help more students reach their graduate school dreams.'
+  },
+  {
+    icon: Heart,
+    title: 'Advisor-First',
+    description: 'We partner closely with advisors to understand their challenges and build tools that truly help.'
+  },
+  {
+    icon: Lightbulb,
+    title: 'Innovation',
+    description: 'We leverage cutting-edge AI responsibly to enhance human judgment, not replace it.'
+  },
+  {
+    icon: Users,
+    title: 'Equity',
+    description: 'We believe every student deserves access to quality guidance, regardless of their background.'
+  }
+];
+
+const team = [
+  {
+    name: 'Dr. Michael Torres',
+    role: 'CEO & Co-Founder',
+    bio: 'Former Dean of Student Services at UC Berkeley with 20 years in higher education.',
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop'
+  },
+  {
+    name: 'Dr. Aisha Patel',
+    role: 'CTO & Co-Founder',
+    bio: 'AI researcher and former Google engineer specializing in education technology.',
+    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop'
+  },
+  {
+    name: 'James Chen',
+    role: 'Head of Product',
+    bio: 'Former product lead at Coursera with a passion for democratizing education.',
+    image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=300&h=300&fit=crop'
+  },
+  {
+    name: 'Dr. Sarah Williams',
+    role: 'Chief Academic Officer',
+    bio: 'PhD in Higher Education Policy from Harvard, former graduate admissions director.',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop'
+  }
+];
+
+const milestones = [
+  { year: '2019', event: 'Founded with a mission to democratize graduate school advising' },
+  { year: '2020', event: 'Launched beta with 10 partner institutions' },
+  { year: '2021', event: 'Series A funding, expanded to 50 universities' },
+  { year: '2022', event: 'Reached 100,000 students guided' },
+  { year: '2023', event: '200+ institutions, introduced AI matching engine' },
+  { year: '2024', event: 'Global expansion with 50,000+ successful placements' }
+];
+
+export default function About() {
+  return (
+    <div className="bg-white">
+      {/* Hero */}
+      <section className="pt-20 pb-32 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+        <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-gradient-to-br from-blue-100/50 to-violet-100/50 rounded-full blur-3xl opacity-50" />
+        
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">About Us</span>
+              <h1 className="mt-4 text-4xl md:text-6xl font-bold text-slate-900 tracking-tight leading-[1.1]">
+                Empowering the advisors who shape futures
+              </h1>
+              <p className="mt-8 text-xl text-slate-600 leading-relaxed">
+                We believe that behind every successful graduate student is a dedicated advisor. 
+                AdvisorAI exists to amplify the impact of these unsung heroes in higher education.
+              </p>
+            </motion.div>
+          </div>
+
+          {/* Stats */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8"
+          >
+            {[
+              { icon: GraduationCap, value: '50K+', label: 'Students Placed' },
+              { icon: Users, value: '200+', label: 'Partner Institutions' },
+              { icon: Globe, value: '15', label: 'Countries' },
+              { icon: TrendingUp, value: '94%', label: 'Success Rate' }
+            ].map((stat, index) => (
+              <div key={index} className="text-center md:text-left">
+                <div className="inline-flex items-center justify-center h-12 w-12 rounded-2xl bg-slate-100 mb-4">
+                  <stat.icon className="h-6 w-6 text-slate-700" />
+                </div>
+                <div className="text-4xl font-bold text-slate-900">{stat.value}</div>
+                <div className="text-sm text-slate-500 mt-1">{stat.label}</div>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Our Story */}
+      <section className="py-24 bg-slate-950 text-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Our Story</h2>
+              <div className="space-y-4 text-slate-300 leading-relaxed">
+                <p>
+                  AdvisorAI was born from a simple observation: academic advisors are overworked 
+                  and under-resourced, yet they play a crucial role in shaping students' futures.
+                </p>
+                <p>
+                  Our founders, Dr. Michael Torres and Dr. Aisha Patel, met at a higher education 
+                  conference in 2018. Michael, frustrated by watching talented advisors burn out 
+                  from overwhelming caseloads, shared his vision of using technology to amplify 
+                  their impact. Aisha, fresh from leading AI research at Google, saw an opportunity 
+                  to apply machine learning in a meaningful way.
+                </p>
+                <p>
+                  Together, they built AdvisorAI—not to replace the human connection at the heart 
+                  of advising, but to give advisors the insights and tools they need to guide more 
+                  students toward their dreams.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Timeline */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="absolute left-4 top-0 bottom-0 w-px bg-slate-700" />
+              <div className="space-y-8">
+                {milestones.map((milestone, index) => (
+                  <div key={index} className="relative pl-12">
+                    <div className="absolute left-0 w-8 h-8 rounded-full bg-slate-800 border-2 border-blue-500 flex items-center justify-center">
+                      <div className="w-2 h-2 rounded-full bg-blue-500" />
+                    </div>
+                    <div className="text-blue-400 font-semibold">{milestone.year}</div>
+                    <div className="text-slate-300 mt-1">{milestone.event}</div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="py-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Our Values</h2>
+              <p className="mt-4 text-lg text-slate-600">The principles that guide everything we do</p>
+            </motion.div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {values.map((value, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="text-center"
+              >
+                <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-blue-50 mb-6">
+                  <value.icon className="h-8 w-8 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-slate-900 mb-3">{value.title}</h3>
+                <p className="text-slate-600">{value.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Team */}
+      <section className="py-24 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Leadership Team</h2>
+              <p className="mt-4 text-lg text-slate-600">Meet the people driving our mission forward</p>
+            </motion.div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {team.map((member, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="bg-white rounded-3xl p-6 text-center shadow-sm border border-slate-100"
+              >
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-32 h-32 rounded-2xl mx-auto mb-6 object-cover"
+                />
+                <h3 className="text-lg font-semibold text-slate-900">{member.name}</h3>
+                <p className="text-blue-600 text-sm font-medium mb-3">{member.role}</p>
+                <p className="text-slate-600 text-sm">{member.bio}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Awards */}
+      <section className="py-24">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-amber-100 mb-6">
+              <Award className="h-8 w-8 text-amber-600" />
+            </div>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Recognized Excellence</h2>
+            <p className="text-lg text-slate-600 mb-8">
+              We're honored to be recognized by leading organizations in education technology
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-8 text-slate-400 font-semibold">
+              {['EdTech Breakthrough Award 2023', 'EDUCAUSE Innovation Award', 'Inc. 5000 Fastest Growing'].map((award) => (
+                <span key={award} className="px-4 py-2 bg-slate-100 rounded-full text-slate-600 text-sm">
+                  {award}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-24 bg-slate-950">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6">
+              Join us in transforming higher education
+            </h2>
+            <p className="text-xl text-slate-400 mb-10">
+              Whether you're an institution looking to empower your advisors or a talented 
+              individual wanting to make an impact, we'd love to connect.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link to={createPageUrl('Pricing')}>
+                <Button size="lg" className="bg-white hover:bg-slate-100 text-slate-900 rounded-full px-8 h-14">
+                  Explore Plans
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <Link to={createPageUrl('Contact')}>
+                <Button size="lg" variant="outline" className="rounded-full px-8 h-14 border-slate-700 text-white hover:bg-slate-800">
+                  Contact Us
+                </Button>
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+    </div>
+  );
+}
