@@ -7,11 +7,11 @@ import { createPageUrl } from '@/utils';
 
 export default function CTASection() {
   const benefits = [
-    'Free 30-day trial',
-    'No credit card required',
-    'Full onboarding support',
-    'Cancel anytime'
-  ];
+  'Free 30-day trial',
+  'No credit card required',
+  'Full onboarding support',
+  'Cancel anytime'];
+
 
   return (
     <section className="py-32 bg-slate-950 relative overflow-hidden">
@@ -24,8 +24,8 @@ export default function CTASection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
+          transition={{ duration: 0.5 }}>
+
           <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
             Ready to transform your
             <span className="block text-blue-400">advising program?</span>
@@ -43,22 +43,22 @@ export default function CTASection() {
               </Button>
             </Link>
             <Link to={createPageUrl('Contact')}>
-              <Button size="lg" variant="outline" className="rounded-full px-8 h-14 text-base border-slate-700 text-white hover:bg-slate-800">
+              <Button size="lg" variant="outline" className="bg-background text-slate-950 px-8 text-base font-medium rounded-full inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border shadow-sm hover:text-accent-foreground h-14 border-slate-700 hover:bg-slate-800">
                 Schedule a Demo
               </Button>
             </Link>
           </div>
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-center gap-2 text-slate-400">
+            {benefits.map((benefit, index) =>
+            <div key={index} className="flex items-center gap-2 text-slate-400">
                 <CheckCircle className="h-5 w-5 text-emerald-500" />
                 <span className="text-sm">{benefit}</span>
               </div>
-            ))}
+            )}
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
