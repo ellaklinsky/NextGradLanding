@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
+import { base44 } from '@/api/base44Client';
 import { 
   Target, 
   Heart, 
@@ -38,24 +39,39 @@ const values = [
   }
 ];
 
-const team = [
-  {
-    name: 'Harsh Yallmpalli',
-    role: 'Co-Founder',
-    bio: 'Passionate about transforming graduate school advising through technology.',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop'
-  },
-  {
-    name: 'Ella Klinsky',
-    role: 'Co-Founder',
-    bio: 'Dedicated to empowering advisors and helping students reach their full potential.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop'
-  }
-];
+
 
 
 
 export default function About() {
+  const [team, setTeam] = useState([
+    {
+      name: 'Harsh Yallmpalli',
+      role: 'Co-Founder',
+      bio: 'Passionate about transforming graduate school advising through technology.',
+      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop'
+    },
+    {
+      name: 'Ella Klinsky',
+      role: 'Co-Founder',
+      bio: 'Dedicated to empowering advisors and helping students reach their full potential.',
+      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop'
+    }
+  ]);
+
+  useEffect(() => {
+    const loadTeamPhotos = async () => {
+      const photos = await base44.entities.TeamPhoto.list();
+      if (photos.length > 0) {
+        setTeam(prevTeam => prevTeam.map(member => {
+          const photo = photos.find(p => p.member_name === member.name);
+          return photo ? { ...member, image: photo.photo_url } : member;
+        }));
+      }
+    };
+    loadTeamPhotos();
+  }, []);
+
   return (
     <div className="bg-white">
       {/* Hero */}
