@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { Switch } from '@/components/ui/switch';
-import { Label } from '@/components/ui/label';
+
 import { Calendar, HelpCircle, ArrowRight } from 'lucide-react';
 import PricingCard from '@/components/pricing/PricingCard';
 import MeetingModal from '@/components/pricing/MeetingModal';
@@ -55,15 +54,12 @@ const faqs = [
 ];
 
 export default function Pricing() {
-  const [annual, setAnnual] = useState(true);
   const [meetingModalOpen, setMeetingModalOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState(null);
 
   const handleSelectPlan = (plan) => {
     setSelectedPlan(plan);
-    if (plan.name === 'Enterprise') {
-      setMeetingModalOpen(true);
-    }
+    setMeetingModalOpen(true);
   };
 
   return (
@@ -80,32 +76,10 @@ export default function Pricing() {
               Simple, transparent pricing
             </h1>
             <p className="mt-6 text-xl text-slate-600 max-w-2xl mx-auto">
-              Choose the plan that fits your institution's size. All plans include a 30-day free trial.
+              Choose the plan that fits your institution's size.
             </p>
           </motion.div>
 
-          {/* Billing Toggle */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="mt-10 flex items-center justify-center gap-4"
-          >
-            <Label htmlFor="billing" className={`text-sm ${!annual ? 'text-slate-900 font-medium' : 'text-slate-500'}`}>
-              Monthly
-            </Label>
-            <Switch
-              id="billing"
-              checked={annual}
-              onCheckedChange={setAnnual}
-            />
-            <Label htmlFor="billing" className={`text-sm ${annual ? 'text-slate-900 font-medium' : 'text-slate-500'}`}>
-              Annual
-              <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded-full text-xs bg-emerald-100 text-emerald-700 font-medium">
-                Save 20%
-              </span>
-            </Label>
-          </motion.div>
         </div>
       </section>
 
