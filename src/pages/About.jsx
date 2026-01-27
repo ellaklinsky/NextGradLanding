@@ -65,14 +65,7 @@ const team = [
   }
 ];
 
-const milestones = [
-  { year: '2019', event: 'Founded with a mission to democratize graduate school advising' },
-  { year: '2020', event: 'Launched beta with 10 partner institutions' },
-  { year: '2021', event: 'Series A funding, expanded to 50 universities' },
-  { year: '2022', event: 'Reached 100,000 students guided' },
-  { year: '2023', event: '200+ institutions, launched NextGrad AI matching engine' },
-  { year: '2024', event: 'Global expansion with 50,000+ successful placements' }
-];
+
 
 export default function About() {
   return (
@@ -126,55 +119,33 @@ export default function About() {
 
       {/* Our Story */}
       <section className="py-24 bg-slate-950 text-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Our Story</h2>
-              <div className="space-y-4 text-slate-300 leading-relaxed">
-                <p>
-                  AdvisorAI was born from a simple observation: academic advisors are overworked 
-                  and under-resourced, yet they play a crucial role in shaping students' futures.
-                </p>
-                <p>
-                  Our founders, Dr. Michael Torres and Dr. Aisha Patel, met at a higher education 
-                  conference in 2018. Michael, frustrated by watching talented advisors burn out 
-                  from overwhelming caseloads, shared his vision of using technology to amplify 
-                  their impact. Aisha, fresh from leading AI research at Google, saw an opportunity 
-                  to apply machine learning in a meaningful way.
-                </p>
-                <p>
-                  Together, they built NextGrad—not to replace the human connection at the heart 
-                  of advising, but to give advisors the insights and tools they need to guide more 
-                  students toward their dreams.
-                </p>
-              </div>
-            </motion.div>
-
-            {/* Timeline */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <div className="absolute left-4 top-0 bottom-0 w-px bg-slate-700" />
-              <div className="space-y-8">
-                {milestones.map((milestone, index) => (
-                  <div key={index} className="relative pl-12">
-                    <div className="absolute left-0 w-8 h-8 rounded-full bg-slate-800 border-2 border-blue-500 flex items-center justify-center">
-                      <div className="w-2 h-2 rounded-full bg-blue-500" />
-                    </div>
-                    <div className="text-blue-400 font-semibold">{milestone.year}</div>
-                    <div className="text-slate-300 mt-1">{milestone.event}</div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">Our Story</h2>
+            <div className="space-y-6 text-slate-300 leading-relaxed text-lg">
+              <p>
+                AdvisorAI was founded by Harsh Yallmpalli and Ella Klinsky, who experienced firsthand 
+                the frustrations of academic advising from both sides of the table.
+              </p>
+              <p>
+                As students, they watched great candidates struggle to succeed—not because they 
+                lacked talent, but because they lacked guidance. As they learned more about 
+                higher education, they discovered that advisors were spending countless hours 
+                on mundane administrative tasks that technology could easily handle.
+              </p>
+              <p>
+                This dual perspective sparked a vision: what if we could free advisors from 
+                repetitive work so they could focus on what really matters—helping students 
+                reach their full potential? AdvisorAI was built to bridge this gap, empowering 
+                advisors with intelligent tools while ensuring no student falls through the cracks.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
 

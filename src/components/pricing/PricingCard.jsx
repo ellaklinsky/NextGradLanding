@@ -74,39 +74,14 @@ export default function PricingCard({ plan, index, onSelectPlan }) {
       <Button 
         onClick={() => onSelectPlan(plan)}
         className={cn(
-          "w-full rounded-full h-12 text-base font-medium mb-8",
+          "w-full rounded-full h-12 text-base font-medium",
           isPopular 
             ? "bg-white hover:bg-slate-100 text-slate-900" 
-            : "bg-slate-900 hover:bg-slate-800 text-white"
+            : "bg-slate-900 hover:bg-slate-800 text-slate-900"
         )}
       >
         {plan.cta}
       </Button>
-
-      <div className="space-y-4">
-        <p className={cn(
-          "text-sm font-semibold",
-          isPopular ? "text-slate-300" : "text-slate-700"
-        )}>
-          {plan.featuresTitle}
-        </p>
-        <ul className="space-y-3">
-          {plan.features.map((feature, i) => (
-            <li key={i} className="flex items-start gap-3">
-              <Check className={cn(
-                "h-5 w-5 flex-shrink-0 mt-0.5",
-                isPopular ? "text-emerald-400" : "text-emerald-600"
-              )} />
-              <span className={cn(
-                "text-sm",
-                isPopular ? "text-slate-300" : "text-slate-600"
-              )}>
-                {feature}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </div>
     </motion.div>
   );
 }

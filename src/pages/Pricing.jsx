@@ -9,61 +9,29 @@ import MeetingModal from '@/components/pricing/MeetingModal';
 
 const plans = [
   {
-    name: 'Small',
-    description: 'Perfect for small departments and individual advisors',
-    price: '$299',
-    period: '/month',
-    billing: 'Billed annually',
-    cta: 'Start Free Trial',
-    featuresTitle: 'Includes:',
-    features: [
-      'Up to 5 advisor seats',
-      '500 student profiles',
-      'AI-powered program matching',
-      'Basic analytics dashboard',
-      'Email support',
-      'Standard integrations',
-      'FERPA compliant'
-    ]
+    name: 'Small College',
+    description: 'For institutions with fewer than 5,000 students',
+    price: '$10,000',
+    period: '/year',
+    billing: '3,100 students avg. served',
+    cta: 'Schedule a Demo'
   },
   {
     name: 'Mid-Size',
-    description: 'Ideal for growing advising centers and departments',
-    price: '$799',
-    period: '/month',
-    billing: 'Billed annually',
-    cta: 'Start Free Trial',
-    popular: true,
-    featuresTitle: 'Everything in Small, plus:',
-    features: [
-      'Up to 25 advisor seats',
-      '2,500 student profiles',
-      'Advanced predictive analytics',
-      'Cohort management tools',
-      'Priority support',
-      'API access',
-      'Custom reporting',
-      'SSO integration'
-    ]
+    description: 'For institutions with 5,000-15,000 students',
+    price: '$30,000',
+    period: '/year',
+    billing: '500 students avg. served',
+    cta: 'Schedule a Demo',
+    popular: true
   },
   {
-    name: 'Enterprise',
-    description: 'For large institutions with complex needs',
-    price: 'Custom',
-    period: '',
-    billing: 'Contact for pricing',
-    cta: 'Contact Sales',
-    featuresTitle: 'Everything in Mid-Size, plus:',
-    features: [
-      'Unlimited advisor seats',
-      'Unlimited student profiles',
-      'Dedicated success manager',
-      'Custom AI model training',
-      '24/7 phone support',
-      'On-premise deployment option',
-      'Advanced security features',
-      'Custom integrations'
-    ]
+    name: 'Large',
+    description: 'For institutions with more than 15,000 students',
+    price: '$150,000',
+    period: '/year',
+    billing: '450 students avg. served',
+    cta: 'Schedule a Demo'
   }
 ];
 
