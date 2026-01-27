@@ -61,14 +61,7 @@ export default function PricingCard({ plan, index, onSelectPlan }) {
             </span>
           )}
         </div>
-        {plan.billing && (
-          <p className={cn(
-            "text-sm mt-1",
-            isPopular ? "text-slate-500" : "text-slate-400"
-          )}>
-            {plan.billing}
-          </p>
-        )}
+
       </div>
 
       <Button 

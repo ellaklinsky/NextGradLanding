@@ -12,7 +12,6 @@ const plans = [
     description: 'For institutions with fewer than 5,000 students',
     price: '$10,000',
     period: '/year',
-    billing: '3,100 students avg. served',
     cta: 'Schedule a Demo'
   },
   {
@@ -20,7 +19,6 @@ const plans = [
     description: 'For institutions with 5,000-15,000 students',
     price: '$30,000',
     period: '/year',
-    billing: '500 students avg. served',
     cta: 'Schedule a Demo',
     popular: true
   },
@@ -29,7 +27,6 @@ const plans = [
     description: 'For institutions with more than 15,000 students',
     price: '$150,000',
     period: '/year',
-    billing: '450 students avg. served',
     cta: 'Schedule a Demo'
   }
 ];
