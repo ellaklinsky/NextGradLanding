@@ -77,10 +77,10 @@ export default function PricingCard({ plan, index, onSelectPlan }) {
           "w-full rounded-full h-12 text-base font-medium",
           isPopular 
             ? "bg-white hover:bg-slate-100 text-slate-900" 
-            : "bg-slate-900 hover:bg-slate-800 text-slate-900"
+            : "bg-slate-900 hover:bg-slate-800 text-white"
         )}
       >
-        {plan.cta}
+        <span className="text-slate-900">{plan.cta}</span>
       </Button>
     </motion.div>
   );
