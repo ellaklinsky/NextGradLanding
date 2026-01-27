@@ -129,19 +129,19 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">Our Story</h2>
             <div className="space-y-6 text-slate-300 leading-relaxed text-lg">
               <p>
-                AdvisorAI was founded by Harsh Yallmpalli and Ella Klinsky, who experienced firsthand 
+                NextGrad was founded by Harsh Yallmpalli and Ella Klinsky, who experienced firsthand 
                 the frustrations of academic advising from both sides of the table.
               </p>
               <p>
-                As students, they watched great candidates struggle to succeed—not because they 
+                As students, they watched great candidates struggle to succeed, not because they 
                 lacked talent, but because they lacked guidance. As they learned more about 
                 higher education, they discovered that advisors were spending countless hours 
                 on mundane administrative tasks that technology could easily handle.
               </p>
               <p>
                 This dual perspective sparked a vision: what if we could free advisors from 
-                repetitive work so they could focus on what really matters—helping students 
-                reach their full potential? AdvisorAI was built to bridge this gap, empowering 
+                repetitive work so they could focus on what really matters, helping students 
+                reach their full potential? NextGrad was built to bridge this gap, empowering 
                 advisors with intelligent tools while ensuring no student falls through the cracks.
               </p>
             </div>
