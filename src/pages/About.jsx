@@ -40,28 +40,16 @@ const values = [
 
 const team = [
   {
-    name: 'Dr. Michael Torres',
-    role: 'CEO & Co-Founder',
-    bio: 'Former Dean of Student Services at UC Berkeley with 20 years in higher education.',
+    name: 'Harsh Yallmpalli',
+    role: 'Co-Founder',
+    bio: 'Passionate about transforming graduate school advising through technology.',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop'
   },
   {
-    name: 'Dr. Aisha Patel',
-    role: 'CTO & Co-Founder',
-    bio: 'AI researcher and former Google engineer specializing in education technology.',
+    name: 'Ella Klinsky',
+    role: 'Co-Founder',
+    bio: 'Dedicated to empowering advisors and helping students reach their full potential.',
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop'
-  },
-  {
-    name: 'James Chen',
-    role: 'Head of Product',
-    bio: 'Former product lead at Coursera with a passion for democratizing education.',
-    image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=300&h=300&fit=crop'
-  },
-  {
-    name: 'Dr. Sarah Williams',
-    role: 'Chief Academic Officer',
-    bio: 'PhD in Higher Education Policy from Harvard, former graduate admissions director.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop'
   }
 ];
 
