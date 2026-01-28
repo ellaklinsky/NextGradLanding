@@ -41,7 +41,7 @@ export default function Contact() {
     };
 
     await base44.integrations.Core.SendEmail({
-      to: formData.email,
+      to: 'applynextgrad@gmail.com',
       subject: `NextGrad Contact Form: ${subjectLabels[formData.subject] || 'General Inquiry'}`,
       body: `
 New contact form submission from NextGrad website:
