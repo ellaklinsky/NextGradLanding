@@ -41,6 +41,10 @@ const faqs = [
     answer: 'No, there are no setup fees for any of our plans. We also provide free onboarding and training for your team.'
   },
   {
+    question: 'Are there additional costs to personalize it for my school?',
+    answer: 'No, we will work with advisors to make criteria, class planning, and the interface perfect for your school at no additional cost.'
+  },
+  {
     question: 'What happens when I exceed my student limit?',
     answer: "We'll notify you when you're approaching your limit and help you upgrade to a plan that fits your needs."
   },
