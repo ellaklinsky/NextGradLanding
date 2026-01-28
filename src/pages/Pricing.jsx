@@ -80,24 +80,8 @@ export default function Pricing() {
         </div>
       </section>
 
-      {/* Pricing Cards */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8 lg:gap-6 items-start">
-            {plans.map((plan, index) => (
-              <PricingCard 
-                key={plan.name} 
-                plan={plan} 
-                index={index}
-                onSelectPlan={handleSelectPlan}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Meet with Rep CTA */}
-      <section className="py-16 bg-slate-50">
+      {/* Find the Right Plan CTA */}
+      <section className="py-24 bg-slate-50">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -109,7 +93,7 @@ export default function Pricing() {
               <Calendar className="h-7 w-7 text-blue-600" />
             </div>
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
-              Not sure which plan is right for you?
+              Find the right plan for your institution
             </h2>
             <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
               Schedule a call with our team to discuss your institution's needs and get a personalized recommendation.
