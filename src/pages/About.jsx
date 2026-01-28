@@ -275,7 +275,7 @@ export default function About() {
                 </Button>
               </Link>
               <Link to={createPageUrl('Contact')}>
-                <Button size="lg" variant="outline" className="rounded-full px-8 h-14 border-slate-700 text-white hover:bg-slate-800">
+                <Button size="lg" variant="outline" className="rounded-full px-8 h-14 border-slate-700 text-slate-900 bg-white hover:bg-slate-100">
                   Contact Us
                 </Button>
               </Link>
