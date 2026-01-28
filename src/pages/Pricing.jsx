@@ -98,10 +98,7 @@ export default function Pricing() {
               Schedule a call with our team to discuss your institution's needs and get a personalized recommendation.
             </p>
             <Button 
-              onClick={() => {
-                setSelectedPlan(null);
-                setMeetingModalOpen(true);
-              }}
+              onClick={() => window.open('https://calendly.com/applynextgrad/30min', '_blank')}
               size="lg"
               className="bg-gradient-to-r from-blue-600 via-violet-600 to-pink-600 hover:from-blue-700 hover:via-violet-700 hover:to-pink-700 text-white rounded-full px-8 h-14 text-base shadow-lg"
             >
