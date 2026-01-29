@@ -46,7 +46,7 @@ const values = [
 export default function About() {
   const [team, setTeam] = useState([
     {
-      name: 'Harsh Yallmpalli',
+      name: 'Harsh Yallampalli',
       role: 'Co-Founder',
       bio: 'Passionate about transforming graduate school advising through technology.',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop'
