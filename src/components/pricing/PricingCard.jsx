@@ -65,7 +65,7 @@ export default function PricingCard({ plan, index, onSelectPlan }) {
       </div>
 
       <Button 
-        onClick={() => onSelectPlan(plan)}
+        onClick={() => window.open('https://calendly.com/applynextgrad/30min', '_blank')}
         className={cn(
           "w-full rounded-full h-12 text-base font-medium",
           isPopular 

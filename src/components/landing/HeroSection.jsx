@@ -62,9 +62,14 @@ export default function HeroSection() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Button size="lg" variant="outline" className="rounded-full px-8 h-14 text-base border-slate-200">
-              <Play className="mr-2 h-5 w-5" />
-              Watch Demo
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="rounded-full px-8 h-14 text-base border-slate-200"
+              onClick={() => window.open('https://calendly.com/applynextgrad/30min', '_blank')}
+            >
+              Schedule a Demo
+              <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </motion.div>
 

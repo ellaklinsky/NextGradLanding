@@ -106,7 +106,7 @@ export default function Pricing() {
               size="lg"
               className="bg-gradient-to-r from-blue-600 via-violet-600 to-pink-600 hover:from-blue-700 hover:via-violet-700 hover:to-pink-700 text-white rounded-full px-8 h-14 text-base shadow-lg"
             >
-              Meet with a Representative
+              Schedule a Demo
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </motion.div>
