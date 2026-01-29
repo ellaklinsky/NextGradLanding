@@ -100,8 +100,7 @@ ${formData.message}
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
-                    <p className="text-slate-600">hello@nextgrad.edu</p>
-                    <p className="text-slate-600">support@nextgrad.edu</p>
+                    <p className="text-slate-600">applynextgrad@gmail.com</p>
                   </div>
                 </div>
 
@@ -111,21 +110,7 @@ ${formData.message}
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Phone</h3>
-                    <p className="text-slate-600">+1 (888) 555-0123</p>
-                    <p className="text-sm text-slate-500">Mon-Fri, 9am-6pm EST</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="h-12 w-12 rounded-2xl bg-blue-50 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">Office</h3>
-                    <p className="text-slate-600">
-                      123 Innovation Drive<br />
-                      Cambridge, MA 02142
-                    </p>
+                    <p className="text-slate-600">917-414-2257</p>
                   </div>
                 </div>
 
