@@ -14,15 +14,15 @@ export default function PricingCard({ plan, index, onSelectPlan }) {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className={cn(
-        "relative rounded-3xl p-8 lg:p-10 border transition-all duration-300",
+        "relative rounded-2xl p-8 lg:p-10 border transition-colors",
         isPopular 
-          ? "bg-slate-900 border-slate-800 text-white scale-105 shadow-2xl" 
-          : "bg-white border-slate-200 hover:border-slate-300 hover:shadow-lg"
+          ? "bg-slate-900 border-slate-800 text-white" 
+          : "bg-white border-slate-200 hover:border-slate-300"
       )}
     >
       {isPopular && (
         <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-          <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-gradient-to-r from-blue-400 to-violet-400 text-white text-sm font-medium">
+          <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-slate-900 text-white text-sm font-medium">
             <Sparkles className="h-4 w-4" />
             Most Popular
           </div>
