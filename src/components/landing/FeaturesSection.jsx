@@ -76,7 +76,7 @@ export default function FeaturesSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group relative bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100"
             >
-              <div className="h-16 w-16 rounded-2xl bg-blue-50 mb-6" />
+              <feature.icon className="h-16 w-16 text-slate-300 stroke-[1] mb-6" />
               <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 {feature.title}
               </h3>

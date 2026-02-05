@@ -89,7 +89,7 @@ export default function Pricing() {
             viewport={{ once: true }}
             className="bg-slate-50 rounded-2xl p-8 lg:p-12 border border-slate-200 text-center"
           >
-            <div className="h-20 w-20 rounded-2xl bg-blue-50 mb-6" />
+            <Calendar className="h-20 w-20 text-slate-300 stroke-[1] mb-6" />
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
               Find the right plan for your institution
             </h2>

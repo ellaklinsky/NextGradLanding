@@ -151,7 +151,7 @@ export default function About() {
                 transition={{ delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="h-16 w-16 rounded-2xl bg-blue-50 mb-6" />
+                <value.icon className="h-16 w-16 text-slate-300 stroke-[1] mb-6" />
                 <h3 className="text-xl font-semibold text-slate-900 mb-3">{value.title}</h3>
                 <p className="text-slate-600">{value.description}</p>
               </motion.div>
