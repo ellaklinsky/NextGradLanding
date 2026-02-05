@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 
-import { Calendar, HelpCircle, ArrowRight } from 'lucide-react';
+import { Calendar, HelpCircle, ArrowRight, Check } from 'lucide-react';
 import PricingCard from '@/components/pricing/PricingCard';
 import MeetingModal from '@/components/pricing/MeetingModal';
 
@@ -99,10 +99,28 @@ export default function Pricing() {
               <Button 
                 onClick={() => window.open('https://calendly.com/applynextgrad/30min', '_blank')}
                 variant="outline"
-                className="w-full rounded-lg h-12 border-slate-300 hover:bg-slate-100"
+                className="w-full rounded-lg h-12 border-slate-300 hover:bg-slate-100 mb-6"
               >
                 Schedule a Demo
               </Button>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700">Customized to your school</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700">AI trained with your advisors' requests in mind</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700">Compiles and holds all student data</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700">Runs analytics and insights</span>
+                </div>
+              </div>
             </motion.div>
 
             {/* Medium */}
@@ -119,10 +137,32 @@ export default function Pricing() {
               </p>
               <Button 
                 onClick={() => window.open('https://calendly.com/applynextgrad/30min', '_blank')}
-                className="w-full rounded-lg h-12 bg-slate-900 hover:bg-slate-800"
+                className="w-full rounded-lg h-12 bg-slate-900 hover:bg-slate-800 mb-6"
               >
                 Schedule a Demo
               </Button>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700">Customized to your school</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700">AI trained with your advisors' requests in mind</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700">Compiles and holds all student data</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700">Runs analytics and insights</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700">Priority support and onboarding</span>
+                </div>
+              </div>
             </motion.div>
 
             {/* Large */}
@@ -140,10 +180,36 @@ export default function Pricing() {
               <Button 
                 onClick={() => window.open('https://calendly.com/applynextgrad/30min', '_blank')}
                 variant="outline"
-                className="w-full rounded-lg h-12 border-slate-300 hover:bg-slate-100"
+                className="w-full rounded-lg h-12 border-slate-300 hover:bg-slate-100 mb-6"
               >
                 Schedule a Demo
               </Button>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700">Customized to your school</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700">AI trained with your advisors' requests in mind</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700">Compiles and holds all student data</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700">Runs analytics and insights</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700">Dedicated account manager</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700">Advanced integrations and API access</span>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
