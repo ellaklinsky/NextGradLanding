@@ -13,38 +13,32 @@ const features = [
   {
     icon: Brain,
     title: 'AI-Powered Matching',
-    description: 'Intelligent algorithms analyze student profiles against thousands of graduate programs to find optimal fits.',
-    color: 'bg-blue-500'
+    description: 'Intelligent algorithms analyze student profiles against thousands of graduate programs to find optimal fits.'
   },
   {
     icon: BarChart3,
     title: 'Predictive Analytics',
-    description: 'Data-driven insights on admission likelihood, scholarship opportunities, and program competitiveness.',
-    color: 'bg-violet-500'
+    description: 'Data-driven insights on admission likelihood, scholarship opportunities, and program competitiveness.'
   },
   {
     icon: FileSearch,
     title: 'Application Tracking',
-    description: 'Comprehensive dashboard to monitor student progress across multiple applications and deadlines.',
-    color: 'bg-emerald-500'
+    description: 'Comprehensive dashboard to monitor student progress across multiple applications and deadlines.'
   },
   {
     icon: MessageSquare,
     title: 'Smart Recommendations',
-    description: 'Personalized suggestions for statement improvements, course prerequisites, and research opportunities.',
-    color: 'bg-amber-500'
+    description: 'Personalized suggestions for statement improvements, course prerequisites, and research opportunities.'
   },
   {
     icon: Users,
     title: 'Cohort Management',
-    description: 'Efficiently manage hundreds of advisees with automated grouping and priority flagging.',
-    color: 'bg-rose-500'
+    description: 'Efficiently manage hundreds of advisees with automated grouping and priority flagging.'
   },
   {
     icon: Shield,
     title: 'FERPA Compliant',
-    description: 'Enterprise-grade security ensuring all student data remains protected and compliant.',
-    color: 'bg-slate-700'
+    description: 'Enterprise-grade security ensuring all student data remains protected and compliant.'
   }
 ];
 
@@ -82,8 +76,8 @@ export default function FeaturesSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group relative bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100"
             >
-              <div className={`inline-flex items-center justify-center h-14 w-14 rounded-2xl ${feature.color} mb-6`}>
-                <feature.icon className="h-7 w-7 text-white" />
+              <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-blue-50 mb-6">
+                <feature.icon className="h-10 w-10 text-slate-300 stroke-[1]" />
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 {feature.title}
