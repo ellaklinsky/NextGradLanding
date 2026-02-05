@@ -60,7 +60,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-8 text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto"
           >
-            Give your advisors the tools to guide more students to graduate school success—without working longer hours. NextGrad automates the research and delivers personalized recommendations so advisors can focus on what matters most.
+            Give your advisors the tools to guide more students to graduate school success without working longer hours. NextGrad automates the research and delivers personalized recommendations so advisors can focus on what matters most.
           </motion.p>
 
           {/* CTA Buttons */}
