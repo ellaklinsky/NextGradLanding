@@ -9,8 +9,7 @@ export default function HeroSection() {
   return (
     <section className="relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-50 to-white" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-gradient-to-br from-blue-100/40 to-purple-100/40 rounded-full blur-3xl opacity-60" />
+      <div className="absolute inset-0 bg-slate-50" />
       
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-32">
         <div className="text-center max-w-4xl mx-auto">
@@ -33,7 +32,7 @@ export default function HeroSection() {
             className="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 leading-[1.1]"
           >
             Save Time.
-            <span className="block bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-transparent">
+            <span className="block text-blue-600">
               Improve Outcomes.
             </span>
           </motion.h1>

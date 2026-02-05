@@ -71,8 +71,7 @@ export default function About() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="pt-20 pb-32 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
-        <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-gradient-to-br from-blue-100/50 to-violet-100/50 rounded-full blur-3xl opacity-50" />
+      <section className="pt-20 pb-32 bg-slate-50 relative overflow-hidden">
         
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl">

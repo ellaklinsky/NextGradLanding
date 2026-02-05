@@ -15,9 +15,7 @@ export default function CTASection() {
 
   return (
     <section className="py-32 bg-slate-950 relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-violet-500/20 rounded-full blur-3xl" />
+
       
       <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
         <motion.div
