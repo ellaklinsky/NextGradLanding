@@ -22,7 +22,7 @@ export default function PricingCard({ plan, index, onSelectPlan }) {
     >
       {isPopular && (
         <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-          <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-gradient-to-r from-blue-500 to-violet-500 text-white text-sm font-medium">
+          <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-gradient-to-r from-blue-400 to-violet-400 text-white text-sm font-medium">
             <Sparkles className="h-4 w-4" />
             Most Popular
           </div>

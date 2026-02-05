@@ -33,7 +33,7 @@ export default function HeroSection() {
             className="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 leading-[1.1]"
           >
             Elevate Your
-            <span className="block bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-transparent">
               Advisory Excellence
             </span>
           </motion.h1>

@@ -76,7 +76,7 @@ export default function Pricing() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-violet-600 to-pink-600 bg-clip-text text-transparent tracking-tight">
+            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500 bg-clip-text text-transparent tracking-tight">
               Simple, transparent pricing
             </h1>
           </motion.div>
@@ -95,7 +95,7 @@ export default function Pricing() {
             <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 mb-6">
               <Calendar className="h-7 w-7 text-white" />
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 via-violet-600 to-pink-600 bg-clip-text text-transparent mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500 bg-clip-text text-transparent mb-4">
               Find the right plan for your institution
             </h2>
             <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
@@ -104,7 +104,7 @@ export default function Pricing() {
             <Button 
               onClick={() => window.open('https://calendly.com/applynextgrad/30min', '_blank')}
               size="lg"
-              className="bg-gradient-to-r from-blue-600 via-violet-600 to-pink-600 hover:from-blue-700 hover:via-violet-700 hover:to-pink-700 text-white rounded-full px-8 h-14 text-base shadow-lg"
+              className="bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500 hover:from-blue-600 hover:via-violet-600 hover:to-pink-600 text-white rounded-full px-8 h-14 text-base shadow-lg"
             >
               Schedule a Demo
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -117,7 +117,7 @@ export default function Pricing() {
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 via-violet-600 to-pink-600 bg-clip-text text-transparent">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500 bg-clip-text text-transparent">Frequently Asked Questions</h2>
           </div>
           <div className="space-y-6">
             {faqs.map((faq, index) => (
@@ -130,7 +130,7 @@ export default function Pricing() {
                 className="bg-gradient-to-br from-blue-50 to-violet-50 rounded-2xl p-6 border border-blue-100"
               >
                 <div className="flex items-start gap-4">
-                  <HelpCircle className="h-6 w-6 text-violet-600 flex-shrink-0 mt-0.5" />
+                  <HelpCircle className="h-6 w-6 text-violet-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">{faq.question}</h3>
                     <p className="text-slate-600">{faq.answer}</p>
