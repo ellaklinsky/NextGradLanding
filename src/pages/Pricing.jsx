@@ -224,7 +224,6 @@ export default function Pricing() {
             viewport={{ once: true }}
             className="bg-slate-50 rounded-2xl p-8 lg:p-12 border border-slate-200 text-center"
           >
-            <Calendar className="h-10 w-10 text-blue-500 stroke-[0.5] mb-6" />
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
               Find the right plan for your institution
             </h2>
