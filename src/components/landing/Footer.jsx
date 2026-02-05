@@ -7,9 +7,9 @@ export default function Footer() {
   return (
     <footer className="bg-slate-950 text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Brand */}
-          <div className="md:col-span-1">
+          <div>
             <Link to={createPageUrl('Home')} className="flex items-center gap-2.5 mb-6">
               <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center relative">
                 <Compass className="h-5 w-5 text-white mt-1" />
@@ -22,37 +22,11 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Product */}
-          <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-slate-300 mb-4">Product</h4>
-            <ul className="space-y-3">
-              <li><Link to={createPageUrl('Home')} className="text-slate-400 hover:text-white transition-colors text-sm">Features</Link></li>
-              <li><Link to={createPageUrl('Pricing')} className="text-slate-400 hover:text-white transition-colors text-sm">Pricing</Link></li>
-              <li><a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">Integrations</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">Security</a></li>
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-slate-300 mb-4">Company</h4>
-            <ul className="space-y-3">
-              <li><Link to={createPageUrl('About')} className="text-slate-400 hover:text-white transition-colors text-sm">About Us</Link></li>
-              <li><a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">Careers</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">Blog</a></li>
-              <li><Link to={createPageUrl('Contact')} className="text-slate-400 hover:text-white transition-colors text-sm">Contact</Link></li>
-            </ul>
-          </div>
-
-          {/* Legal */}
-          <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-slate-300 mb-4">Legal</h4>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">Privacy Policy</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">Terms of Service</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">Cookie Policy</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">FERPA Compliance</a></li>
-            </ul>
+          {/* Links */}
+          <div className="flex items-center gap-8">
+            <Link to={createPageUrl('About')} className="text-slate-400 hover:text-white transition-colors text-sm">About us</Link>
+            <Link to={createPageUrl('Contact')} className="text-slate-400 hover:text-white transition-colors text-sm">Contact</Link>
+            <a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">FERPA Compliance</a>
           </div>
         </div>
 
