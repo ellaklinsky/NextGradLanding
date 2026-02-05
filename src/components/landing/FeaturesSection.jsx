@@ -6,9 +6,7 @@ import {
   Users, 
   FileSearch, 
   MessageSquare, 
-  Shield,
-  Zap,
-  Target
+  Shield
 } from 'lucide-react';
 
 const features = [
@@ -82,11 +80,8 @@ export default function FeaturesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100"
+              className="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-slate-300 transition-colors"
             >
-              <div className={`inline-flex items-center justify-center h-14 w-14 rounded-2xl ${feature.color} mb-6`}>
-                <feature.icon className="h-7 w-7 text-white" />
-              </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 {feature.title}
               </h3>
@@ -105,11 +100,9 @@ export default function FeaturesSection() {
           transition={{ duration: 0.5 }}
           className="mt-20 text-center"
         >
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-slate-900 text-white">
-            <Zap className="h-5 w-5 text-yellow-400" />
-            <span className="font-medium">See how institutions improved outcomes by 40%</span>
-            <Target className="h-5 w-5" />
-          </div>
+          <p className="text-slate-600 text-lg">
+            Institutions using NextGrad have improved student outcomes by an average of 40%
+          </p>
         </motion.div>
       </div>
     </section>
