@@ -95,7 +95,7 @@ ${formData.message}
               
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
-                  <Mail className="h-6 w-6 text-slate-200 stroke-[0.5] flex-shrink-0" />
+                  <Mail className="h-6 w-6 text-blue-500 stroke-[0.5] flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
                     <p className="text-slate-600">applynextgrad@gmail.com</p>
@@ -103,7 +103,7 @@ ${formData.message}
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <Phone className="h-6 w-6 text-slate-200 stroke-[0.5] flex-shrink-0" />
+                  <Phone className="h-6 w-6 text-blue-500 stroke-[0.5] flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Phone</h3>
                     <p className="text-slate-600">917-414-2257</p>
@@ -111,7 +111,7 @@ ${formData.message}
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <Clock className="h-6 w-6 text-slate-200 stroke-[0.5] flex-shrink-0" />
+                  <Clock className="h-6 w-6 text-blue-500 stroke-[0.5] flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Response Time</h3>
                     <p className="text-slate-600">We typically respond within 24 hours</p>
