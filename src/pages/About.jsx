@@ -153,7 +153,7 @@ export default function About() {
                 className="text-center"
               >
                 <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-blue-50 mb-6">
-                  <value.icon className="h-8 w-8 text-blue-600" />
+                  <value.icon className="h-10 w-10 text-slate-300 stroke-[1]" />
                 </div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-3">{value.title}</h3>
                 <p className="text-slate-600">{value.description}</p>
