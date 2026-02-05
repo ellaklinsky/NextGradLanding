@@ -26,7 +26,7 @@ export default function Footer() {
           <div className="flex items-center justify-center gap-6 w-full max-w-2xl">
             <Link to={createPageUrl('About')} className="flex-1 text-center bg-slate-800 hover:bg-slate-700 text-white transition-colors py-4 px-8 rounded-lg font-medium">About us</Link>
             <Link to={createPageUrl('Contact')} className="flex-1 text-center bg-slate-800 hover:bg-slate-700 text-white transition-colors py-4 px-8 rounded-lg font-medium">Contact</Link>
-            <a href="#" className="flex-1 text-center bg-slate-800 hover:bg-slate-700 text-white transition-colors py-4 px-8 rounded-lg font-medium">FERPA Compliance</a>
+            <Link to={createPageUrl('FERPACompliance')} className="flex-1 text-center bg-slate-800 hover:bg-slate-700 text-white transition-colors py-4 px-8 rounded-lg font-medium">FERPA Compliance</Link>
           </div>
         </div>
 

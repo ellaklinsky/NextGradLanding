@@ -52,6 +52,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Pricing from './pages/Pricing';
 import UploadTeamPhotos from './pages/UploadTeamPhotos';
+import FERPACompliance from './pages/FERPACompliance';
 import __Layout from './Layout.jsx';
 
 
@@ -61,6 +62,7 @@ export const PAGES = {
     "Home": Home,
     "Pricing": Pricing,
     "UploadTeamPhotos": UploadTeamPhotos,
+    "FERPACompliance": FERPACompliance,
 }
 
 export const pagesConfig = {
