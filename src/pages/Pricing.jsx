@@ -231,14 +231,15 @@ export default function Pricing() {
             <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
               Schedule a call with our team to discuss your institution's needs and get a personalized recommendation.
             </p>
-            <Button 
-              onClick={() => window.open('https://calendly.com/applynextgrad/30min', '_blank')}
-              size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 h-14 text-base"
+            <a 
+              href="https://calendly.com/applynextgrad/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-700 font-semibold text-lg flex items-center gap-2 justify-center"
             >
-              Schedule a Demo
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+              Learn More
+              <ArrowRight className="h-5 w-5" />
+            </a>
           </motion.div>
         </div>
       </section>
