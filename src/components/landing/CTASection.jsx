@@ -34,12 +34,6 @@ export default function CTASection() {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to={createPageUrl('Pricing')}>
-              <Button size="lg" className="bg-white hover:bg-slate-100 text-slate-900 rounded-full px-8 h-14 text-base">
-                Get Started Free
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
             <Link to={createPageUrl('Contact')}>
               <Button size="lg" variant="outline" className="bg-background text-slate-950 px-8 text-base font-medium rounded-full inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border shadow-sm hover:text-accent-foreground h-14 border-slate-700 hover:bg-slate-800">
                 Schedule a Demo
