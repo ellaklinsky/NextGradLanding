@@ -66,7 +66,7 @@ export default function Pricing() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="pt-20 pb-16 bg-slate-50">
+      <section className="pt-20 pb-16 bg-blue-50/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -89,7 +89,7 @@ export default function Pricing() {
             viewport={{ once: true }}
             className="bg-slate-50 rounded-2xl p-8 lg:p-12 border border-slate-200 text-center"
           >
-            <div className="inline-flex items-center justify-center h-14 w-14 rounded-xl bg-slate-900 mb-6">
+            <div className="inline-flex items-center justify-center h-14 w-14 rounded-xl bg-blue-600 mb-6">
               <Calendar className="h-7 w-7 text-white" />
             </div>
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
@@ -101,7 +101,7 @@ export default function Pricing() {
             <Button 
               onClick={() => window.open('https://calendly.com/applynextgrad/30min', '_blank')}
               size="lg"
-              className="bg-slate-900 hover:bg-slate-800 text-white rounded-full px-8 h-14 text-base"
+              className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 h-14 text-base"
             >
               Schedule a Demo
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -124,10 +124,10 @@ export default function Pricing() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-slate-50 rounded-xl p-6 border border-slate-200"
+                className="bg-blue-50/30 rounded-xl p-6 border border-blue-100/50"
               >
                 <div className="flex items-start gap-4">
-                  <HelpCircle className="h-6 w-6 text-slate-400 flex-shrink-0 mt-0.5" />
+                  <HelpCircle className="h-6 w-6 text-blue-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">{faq.question}</h3>
                     <p className="text-slate-600">{faq.answer}</p>
