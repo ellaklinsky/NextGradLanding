@@ -41,7 +41,7 @@ export default function Footer() {
             <a href="#" className="text-slate-500 hover:text-white transition-colors">
               <Linkedin className="h-5 w-5" />
             </a>
-            <a href="#" className="text-slate-500 hover:text-white transition-colors">
+            <a href="mailto:applynextgrad@gmail.com" className="text-slate-500 hover:text-white transition-colors">
               <Mail className="h-5 w-5" />
             </a>
           </div>
