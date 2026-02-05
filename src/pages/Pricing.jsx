@@ -66,7 +66,7 @@ export default function Pricing() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="pt-20 pb-16 bg-blue-50">
+      <section className="pt-20 pb-16 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -80,8 +80,77 @@ export default function Pricing() {
         </div>
       </section>
 
+      {/* Pricing Cards */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {/* Small */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="bg-slate-50 rounded-2xl p-8 border border-slate-200"
+            >
+              <div className="text-sm font-medium text-slate-600 mb-2">Basic</div>
+              <h3 className="text-3xl font-bold text-slate-900 mb-4">Small</h3>
+              <p className="text-slate-600 mb-6">
+                For institutions with fewer than 5,000 students
+              </p>
+              <Button 
+                onClick={() => window.open('https://calendly.com/applynextgrad/30min', '_blank')}
+                variant="outline"
+                className="w-full rounded-lg h-12 border-slate-300 hover:bg-slate-100"
+              >
+                Schedule a Demo
+              </Button>
+            </motion.div>
+
+            {/* Medium */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="bg-slate-50 rounded-2xl p-8 border border-slate-200 relative"
+            >
+              <div className="text-sm font-medium text-slate-600 mb-2">Plus</div>
+              <h3 className="text-3xl font-bold text-slate-900 mb-4">Medium</h3>
+              <p className="text-slate-600 mb-6">
+                For institutions with 5,000-15,000 students
+              </p>
+              <Button 
+                onClick={() => window.open('https://calendly.com/applynextgrad/30min', '_blank')}
+                className="w-full rounded-lg h-12 bg-slate-900 hover:bg-slate-800"
+              >
+                Schedule a Demo
+              </Button>
+            </motion.div>
+
+            {/* Large */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="bg-slate-50 rounded-2xl p-8 border border-slate-200"
+            >
+              <div className="text-sm font-medium text-slate-600 mb-2">Enterprise</div>
+              <h3 className="text-3xl font-bold text-slate-900 mb-4">Large</h3>
+              <p className="text-slate-600 mb-6">
+                For institutions with more than 15,000 students
+              </p>
+              <Button 
+                onClick={() => window.open('https://calendly.com/applynextgrad/30min', '_blank')}
+                variant="outline"
+                className="w-full rounded-lg h-12 border-slate-300 hover:bg-slate-100"
+              >
+                Schedule a Demo
+              </Button>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Find the Right Plan CTA */}
-      <section className="py-24 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
