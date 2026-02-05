@@ -66,13 +66,16 @@ export default function Pricing() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="pt-20 pb-16 bg-gradient-to-b from-slate-50 to-white">
+      <section className="pt-20 pb-16 bg-gradient-to-b from-blue-50 via-slate-50 to-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
+            <div className="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-medium text-sm mb-6">
+              Flexible Plans for Every Institution
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight">
               Simple, transparent pricing
             </h1>
@@ -89,9 +92,9 @@ export default function Pricing() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="bg-slate-50 rounded-2xl p-8 border border-slate-200"
+              className="bg-slate-50 rounded-2xl p-8 border-2 border-blue-200 hover:border-blue-300 transition-colors"
             >
-              <div className="text-sm font-medium text-slate-600 mb-2">Basic</div>
+              <div className="text-sm font-medium text-blue-600 mb-2">Basic</div>
               <h3 className="text-3xl font-bold text-slate-900 mb-4">Small</h3>
               <p className="text-slate-600 mb-6">
                 For institutions with fewer than 5,000 students
@@ -128,9 +131,12 @@ export default function Pricing() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-slate-50 rounded-2xl p-8 border border-slate-200 relative"
+              className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 border-2 border-blue-400 hover:border-blue-500 transition-colors relative shadow-lg shadow-blue-100"
             >
-              <div className="text-sm font-medium text-slate-600 mb-2">Plus</div>
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full">
+                Most Popular
+              </div>
+              <div className="text-sm font-medium text-blue-600 mb-2">Plus</div>
               <h3 className="text-3xl font-bold text-slate-900 mb-4">Medium</h3>
               <p className="text-slate-600 mb-6">
                 For institutions with 5,000-15,000 students
@@ -170,9 +176,9 @@ export default function Pricing() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-slate-50 rounded-2xl p-8 border border-slate-200"
+              className="bg-slate-50 rounded-2xl p-8 border-2 border-blue-200 hover:border-blue-300 transition-colors"
             >
-              <div className="text-sm font-medium text-slate-600 mb-2">Enterprise</div>
+              <div className="text-sm font-medium text-blue-600 mb-2">Enterprise</div>
               <h3 className="text-3xl font-bold text-slate-900 mb-4">Large</h3>
               <p className="text-slate-600 mb-6">
                 For institutions with more than 15,000 students
@@ -222,7 +228,7 @@ export default function Pricing() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-slate-50 rounded-2xl p-8 lg:p-12 border border-slate-200 text-center"
+            className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 lg:p-12 border-2 border-blue-200 text-center"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
               Find the right plan for your institution
