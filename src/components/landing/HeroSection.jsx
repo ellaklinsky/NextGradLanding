@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Play, Compass, GraduationCap, Users, TrendingUp } from 'lucide-react';
+import { ArrowRight, Compass } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 
@@ -32,9 +32,9 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 leading-[1.1]"
           >
-            Elevate Your
+            Save Time.
             <span className="block bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-transparent">
-              Advisory Excellence
+              Improve Outcomes.
             </span>
           </motion.h1>
 
@@ -45,8 +45,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-8 text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto"
           >
-            Empower your institution's advisors with intelligent insights, personalized recommendations, 
-            and data-driven guidance to help undergraduate students achieve their graduate school aspirations.
+            Give your advisors the tools to guide more students to graduate school success—without working longer hours. NextGrad automates the research and delivers personalized recommendations so advisors can focus on what matters most.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -73,27 +72,7 @@ export default function HeroSection() {
             </Button>
           </motion.div>
 
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="mt-20 grid grid-cols-3 gap-8 max-w-2xl mx-auto"
-          >
-            {[
-              { icon: GraduationCap, value: '50K+', label: 'Students Guided' },
-              { icon: Users, value: '200+', label: 'Institutions' },
-              { icon: TrendingUp, value: '94%', label: 'Success Rate' },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center h-12 w-12 rounded-2xl bg-slate-100 mb-3">
-                  <stat.icon className="h-6 w-6 text-slate-700" />
-                </div>
-                <div className="text-3xl font-bold text-slate-900">{stat.value}</div>
-                <div className="text-sm text-slate-500 mt-1">{stat.label}</div>
-              </div>
-            ))}
-          </motion.div>
+
         </div>
       </div>
     </section>

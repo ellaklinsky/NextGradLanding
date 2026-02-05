@@ -6,9 +6,7 @@ import {
   Users, 
   FileSearch, 
   MessageSquare, 
-  Shield,
-  Zap,
-  Target
+  Shield
 } from 'lucide-react';
 
 const features = [
@@ -97,20 +95,7 @@ export default function FeaturesSection() {
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mt-20 text-center"
-        >
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-slate-900 text-white">
-            <Zap className="h-5 w-5 text-yellow-400" />
-            <span className="font-medium">See how institutions improved outcomes by 40%</span>
-            <Target className="h-5 w-5" />
-          </div>
-        </motion.div>
+
       </div>
     </section>
   );
