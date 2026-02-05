@@ -53,8 +53,9 @@ export default function FERPACompliance() {
             transition={{ duration: 0.5 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-blue-100 mb-6">
-              <Shield className="h-8 w-8 text-blue-600" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-8">
+              <Shield className="h-4 w-4 text-blue-600" />
+              <span className="text-sm font-medium text-blue-700">FERPA Compliant</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-6">
               FERPA Compliance
@@ -77,7 +78,7 @@ export default function FERPACompliance() {
             className="bg-blue-50 rounded-2xl p-8 border border-blue-100"
           >
             <div className="flex items-start gap-4">
-              <FileCheck className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
+              <FileCheck className="h-4 w-4 text-blue-600 flex-shrink-0 mt-1" />
               <div>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">Our FERPA Commitment</h2>
                 <p className="text-slate-700 leading-relaxed mb-4">
@@ -117,7 +118,7 @@ export default function FERPACompliance() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100"
               >
-                <item.icon className="h-8 w-8 text-blue-600 mb-4" />
+                <item.icon className="h-4 w-4 text-blue-600 mb-4" />
                 <h3 className="text-xl font-semibold text-slate-900 mb-4">
                   {item.title}
                 </h3>
