@@ -45,9 +45,6 @@ export default function Navbar() {
             <Button variant="ghost" className="text-slate-600 hover:text-slate-900">
               Sign In
             </Button>
-            <Button className="bg-slate-900 hover:bg-slate-800 text-white rounded-full px-6">
-              Get Started
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -82,7 +79,6 @@ export default function Navbar() {
               ))}
               <div className="pt-4 space-y-2">
                 <Button variant="outline" className="w-full">Sign In</Button>
-                <Button className="w-full bg-slate-900 hover:bg-slate-800">Get Started</Button>
               </div>
             </div>
           </motion.div>
