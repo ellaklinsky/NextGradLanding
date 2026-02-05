@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
-import { Compass, GraduationCap, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Compass, GraduationCap, Linkedin, Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -35,9 +35,6 @@ export default function Footer() {
             © {new Date().getFullYear()} NextGrad. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <a href="#" className="text-slate-500 hover:text-white transition-colors">
-              <Twitter className="h-5 w-5" />
-            </a>
             <a href="#" className="text-slate-500 hover:text-white transition-colors">
               <Linkedin className="h-5 w-5" />
             </a>
