@@ -69,7 +69,7 @@ export default function FERPACompliance() {
 
       {/* Compliance Statement */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -137,7 +137,7 @@ export default function FERPACompliance() {
 
       {/* Contact Section */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
