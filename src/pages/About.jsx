@@ -182,7 +182,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-3xl p-6 text-center shadow-sm border border-slate-100"
+                className="bg-white rounded-3xl p-6 text-center shadow-sm border border-slate-100 flex flex-col items-center justify-center min-h-[320px]"
               >
                 <img
                   src={member.image}

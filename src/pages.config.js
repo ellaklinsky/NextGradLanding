@@ -49,20 +49,20 @@
  */
 import About from './pages/About';
 import Contact from './pages/Contact';
+import FERPACompliance from './pages/FERPACompliance';
 import Home from './pages/Home';
 import Pricing from './pages/Pricing';
 import UploadTeamPhotos from './pages/UploadTeamPhotos';
-import FERPACompliance from './pages/FERPACompliance';
 import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
     "About": About,
     "Contact": Contact,
+    "FERPACompliance": FERPACompliance,
     "Home": Home,
     "Pricing": Pricing,
     "UploadTeamPhotos": UploadTeamPhotos,
-    "FERPACompliance": FERPACompliance,
 }
 
 export const pagesConfig = {
