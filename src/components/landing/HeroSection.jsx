@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Compass } from 'lucide-react';
+import { ArrowRight, Play, Compass, GraduationCap, Users, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 
@@ -78,20 +78,21 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="mt-20 flex flex-wrap justify-center gap-x-12 gap-y-6 text-slate-600"
+            className="mt-20 grid grid-cols-3 gap-8 max-w-2xl mx-auto"
           >
-            <div className="text-center">
-              <div className="text-3xl font-bold text-slate-900">50,000+</div>
-              <div className="text-sm mt-1">Students Guided</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-slate-900">200+</div>
-              <div className="text-sm mt-1">Institutions</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-slate-900">94%</div>
-              <div className="text-sm mt-1">Success Rate</div>
-            </div>
+            {[
+              { icon: GraduationCap, value: '50K+', label: 'Students Guided' },
+              { icon: Users, value: '200+', label: 'Institutions' },
+              { icon: TrendingUp, value: '94%', label: 'Success Rate' },
+            ].map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="inline-flex items-center justify-center h-12 w-12 rounded-2xl bg-slate-100 mb-3">
+                  <stat.icon className="h-6 w-6 text-slate-700" />
+                </div>
+                <div className="text-3xl font-bold text-slate-900">{stat.value}</div>
+                <div className="text-sm text-slate-500 mt-1">{stat.label}</div>
+              </div>
+            ))}
           </motion.div>
         </div>
       </div>
