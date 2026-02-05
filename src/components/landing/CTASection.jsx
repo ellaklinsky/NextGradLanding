@@ -7,8 +7,8 @@ import { createPageUrl } from '@/utils';
 
 export default function CTASection() {
   const benefits = [
-  'Free 30-day trial',
-  'No credit card required',
+  'Save up to 40% of advisor time',
+  'Personalized to your school needs',
   'Full onboarding support',
   'Cancel anytime'];
 

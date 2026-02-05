@@ -8,10 +8,7 @@ import {
   Lightbulb, 
   Users, 
   Award, 
-  ArrowRight,
-  GraduationCap,
-  Globe,
-  TrendingUp
+  ArrowRight
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -96,28 +93,7 @@ export default function About() {
             </motion.div>
           </div>
 
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8"
-          >
-            {[
-              { icon: GraduationCap, value: '50K+', label: 'Students Placed' },
-              { icon: Users, value: '200+', label: 'Partner Institutions' },
-              { icon: Globe, value: '15', label: 'Countries' },
-              { icon: TrendingUp, value: '94%', label: 'Success Rate' }
-            ].map((stat, index) => (
-              <div key={index} className="text-center md:text-left">
-                <div className="inline-flex items-center justify-center h-12 w-12 rounded-2xl bg-slate-100 mb-4">
-                  <stat.icon className="h-6 w-6 text-slate-700" />
-                </div>
-                <div className="text-4xl font-bold text-slate-900">{stat.value}</div>
-                <div className="text-sm text-slate-500 mt-1">{stat.label}</div>
-              </div>
-            ))}
-          </motion.div>
+
         </div>
       </section>
 
