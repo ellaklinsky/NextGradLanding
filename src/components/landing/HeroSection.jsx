@@ -11,7 +11,7 @@ export default function HeroSection() {
       {/* Background Elements */}
       <div className="absolute inset-0 bg-slate-50" />
       
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-32">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-16">
         <div className="text-center max-w-4xl mx-auto">
           {/* Badge */}
           <motion.div

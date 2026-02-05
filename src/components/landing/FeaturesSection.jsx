@@ -44,7 +44,7 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="py-32 bg-slate-50">
+    <section className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
