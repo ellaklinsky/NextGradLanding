@@ -37,6 +37,22 @@ export default function HeroSection() {
             </span>
           </motion.h1>
 
+          {/* Stats */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-6 text-slate-600"
+          >
+            <div className="flex items-center gap-2">
+              <span className="text-lg font-semibold">Save up to 40% of advisor time</span>
+            </div>
+            <div className="hidden sm:block w-1 h-1 rounded-full bg-slate-400" />
+            <div className="flex items-center gap-2">
+              <span className="text-lg font-semibold">Endorsed by Dartmouth</span>
+            </div>
+          </motion.div>
+
           {/* Subheadline */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
